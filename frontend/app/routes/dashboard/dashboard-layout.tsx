@@ -37,19 +37,19 @@ const DashboardLayout = () => {
 	const handleCreateWorkspace = () => { }
 
 	return (
-		<div className="w-full h-screen flex">
+		<div className="w-full flex min-h-screen">
 			{/* sidebar */}
 			<SidebarComponent currentWorkspace={currentWorkspace} />
 
 			{/* main */}
-			<div className="flex flex-col flex-1 h-full">
+			<div className="flex flex-col w-full h-full min-h-0">
 				<Header
 					onWorkspaceSelected={handleWorkspaceSelected}
 					selectedWorkspace={currentWorkspace}
 					onCreateWorkspace={() => setIsCreatingWorkspace(true)}
 				/>
-				<main className="flex-1 h-full w-full overflow-y-auto">
-					<div className="container mx-auto px-2 sm:px-6 lg:px-8 py-0 md:py-8 w-full h-full">
+				<main className="flex-1 w-full overflow-y-auto min-h-0">
+					<div className="container mx-auto px-2 sm:px-6 lg:px-8 py-0 md:py-8 w-full">
 						<Outlet />
 					</div>
 				</main>

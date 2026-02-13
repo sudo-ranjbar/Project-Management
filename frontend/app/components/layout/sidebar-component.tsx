@@ -46,7 +46,7 @@ const SidebarComponent = ({ currentWorkspace }: { currentWorkspace: Workspace | 
         },
     ];
     return (
-        <div className={cn("flex flex-col border-r bg-sidebar transition-all duration-300", isCollapsed ? "w-16 md:w-20" : "w-16 md:w-60")}>
+        <div className={cn("flex flex-col border-r bg-sidebar transition-all duration-300 h-screen sticky top-0", isCollapsed ? "w-16 md:w-20" : "w-16 md:w-60")}>
             {/* sidebar header */}
             <div className="flex items-center justify-center px-4 h-14 border-b">
                 <Link to="/dashboard" className="flex items-center ">

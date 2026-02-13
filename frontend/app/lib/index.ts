@@ -1,4 +1,5 @@
 import type { ProjectStatus, Task, TaskStatus } from "@/types";
+
 export const publicRoutes = [
 	"/",
 	"/sign-in",
